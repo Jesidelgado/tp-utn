@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* Example of a valid class or remove if not needed */
+.rubik-bold {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.rubik-regular {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* estilo especifico del navbar */
+
+/* Navbar rojo: enlaces con borde delicado */
+.navbar-rojo .navbar-nav .nav-link {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover */
+.navbar-rojo .navbar-nav .nav-link:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* Activo: puedes remarcar ligeramente el fondo */
+.navbar-rojo .navbar-nav .nav-link.active,
+.navbar-rojo .navbar-nav .nav-link:active {
+  background-color: rgba(255, 255, 255, 0.451);
+  border-color: #ffffff;
+  font-weight: 600;
+}
+
+.navbar-rojo{
+  background-color: rgb(214, 0, 0);
+}
+
+.navbar-nav .dropdown-menu{
+  padding: 0.5rem;
+  background-color: rgb(200, 0, 0);
+}
+
+/* Estilo para los ítems del dropdown */
+.navbar-rojo .dropdown-menu .dropdown-item {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover delicado para ítems del dropdown */
+.navbar-rojo .dropdown-menu .dropdown-item:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}

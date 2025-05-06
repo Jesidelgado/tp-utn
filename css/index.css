@@ -1,0 +1,234 @@
+/* main */
+body.index main {
+    margin-bottom: 16vh;
+    background-color: #363434;
+}
+
+/* navbar */
+.img-logo-auto {
+    width: 100%;
+    max-width: 100px; /* o el tamaño máximo que definas */
+    height: auto;
+}
+
+/* hero */
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/frente-autos-dos.jpg);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.hero-container::before {
+    background: #FFFFFF;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.7); /* Rojo brillante con transparencia */
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    color: #e4e0e0;
+    text-align: center;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* texto para el index */
+.hero-texto {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #d92929ba;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.hero-texto h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    color: #e4e0e0;
+    text-align: center;
+}
+
+.hero-texto p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 .titulo {
+    font-family: "Rubik", sans-serif;
+}
+
+/* Tarjeta para el h2 de introducción */
+.nosotros-texto > p {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(189, 5, 5, 0.1);
+    color: #b00505;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 40px;
+    display: block;
+}
+
+/* Tarjeta para la lista de servicios */
+.nosotros-texto .services-section {
+    background-color: none;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #333;
+    margin-bottom: 40px;
+}
+
+/* 3) Diseño de la lista en tres columnas */
+.nosotros-texto .lista-servicios {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* 4) Estilo de cada columna y sus ítems */
+.nosotros-texto .lista-servicios ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    min-width: 180px;
+}
+
+.nosotros-texto .lista-servicios li {
+    background-color: #f6f6f6;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #b00505;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.nosotros-texto .lista-servicios li:hover {
+    background-color: #fce6e6;
+}
+
+@media (max-width: 480px) {
+    /* Ajuste del h1 en el hero */
+    .hero-text h1 {
+        font-size: 2rem; /* Más pequeño para mobile */
+        -webkit-text-stroke: 1px black; /* Más suave */
+    }
+
+    /* Ajuste de párrafos y h2 en hero */
+    .hero-text h2 {
+        font-size: 1rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    /* Ajuste del contenedor del hero */
+    .hero-container {
+        height: 50vh;
+        padding-bottom: 20px;
+    }
+
+    /* Imagen logo */
+    .img-logo-auto {
+        max-width: 70px;
+    }
+
+    /* Texto de introducción */
+    .hero-texto {
+        padding: 6px;
+    }
+    .hero-texto h1 {
+        font-size: 2rem;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .hero-texto p {
+        font-size: 0.95rem;
+    }
+
+    .hero-texto h2 {
+        font-size: 1rem;
+    }
+
+    /* Títulos */
+    .titulo {
+        font-size: 2rem;
+        -webkit-text-stroke: 1px black;
+    }
+
+    /* Texto en tarjetas */
+    .nosotros-texto > p {
+        padding: 20px;
+        font-size: 0.95rem;
+    }
+
+    .nosotros-texto .lista-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros-texto .lista-servicios ul {
+        min-width: unset;
+        width: 100%;
+    }
+}
